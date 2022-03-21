@@ -25,5 +25,3 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('website/{id}', [PostController::class, 'store']);
 
 Route::post('subscribe/{website}/{user}', [WebsiteSubscriberController::class, 'store']);
-
-Route::post('/notify/{id}', [EmailController::class, 'send']);
