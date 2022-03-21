@@ -49,8 +49,17 @@ Now, you will be able to run the application:
 ```
 php artisan serve
 ```
-You can create a new post using the endpoint
+You can create a new post using the endpoint:
 ```
 http://127.0.0.1:8000/api/website/{websiteId}
 ```
-Passing in the body the title and description of the post.
+Using the POST method and passing in the body the title and description of the post.
+
+To register a new user in the website notification, you can use this POST endpoint:
+
+```
+http://127.0.0.1:8000/api/{websiteId}/{userId}
+```
+After that, the user will be notified when new posts were created.
+
+
